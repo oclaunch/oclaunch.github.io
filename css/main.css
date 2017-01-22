@@ -2400,11 +2400,31 @@ footer ul li {
 }
 
 
-#fps {
-    position: fixed;
-		            top: 10;
-                left: 10;
-                width: 50;
-                height: 20;
-                color: white;
-            }
+#top-image {
+background:url('../images/bg.png') no-repeat center/* -25px -50px*/;
+position: fixed;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+background-size: cover;
+display: table;
+top:0;
+width:100%;
+z-index:-3;
+  height:100%;
+	min-height: 720px;
+
+}
+
+.parallax {
+    /* The image used */
+    background-image: url("../images/bg.png");
+
+    /* Set a specific height */
+    height: 500px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
